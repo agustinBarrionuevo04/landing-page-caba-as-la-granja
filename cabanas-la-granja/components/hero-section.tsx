@@ -14,7 +14,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/placeholder-yxjlk.png')`,
+          backgroundImage: `url('/fondo_principal.jpeg')`,
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>

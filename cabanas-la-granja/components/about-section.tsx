@@ -15,8 +15,8 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="/placeholder-4p6y5.png"
-              alt="Interior acogedor de cabaña"
+              src="/cabaña_v3.jpeg"
+              alt="cabaña la granja"
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
