@@ -23,12 +23,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-          Descubre la serenidad en
+          Vivi la tranquilidad en 
           <span className="text-secondary block mt-2">Cabañas la Granja</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-pretty max-w-2xl mx-auto leading-relaxed">
-          Ubicadas en el corazón de La Falda, Córdoba, nuestras cabañas te ofrecen el refugio perfecto para reconectar
-          con la naturaleza y encontrar la paz que buscas.
+          Ubicadas en el corazón de La Falda, Córdoba, nuestras cabañas son el destino perfecto para 
+          reconectar con la naturaleza
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button

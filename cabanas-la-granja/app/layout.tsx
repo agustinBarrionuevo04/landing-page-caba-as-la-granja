@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: "Cabañas la Granja - La Falda, Córdoba",
   description:
     "Descubre la serenidad en nuestras cabañas ubicadas en La Falda, Córdoba. El lugar perfecto para desconectar y disfrutar de la naturaleza.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({

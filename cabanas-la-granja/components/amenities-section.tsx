@@ -1,37 +1,63 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Wifi, Car, Utensils, Flame, Trees, Mountain } from "lucide-react"
+import { Wifi, Car, Utensils, Flame, Dog, Mountain, WavesLadder, Dices, Trees, Martini, Beef, Volleyball, FerrisWheel, Armchair} from "lucide-react"
 
 export function AmenitiesSection() {
   const amenities = [
     {
       icon: <Utensils className="w-8 h-8" />,
-      title: "Cocina Equipada",
-      description: "Cocina completa con heladera, microondas, cocina y todos los utensilios necesarios.",
+      title: "Cocina Completamente Equipada",
     },
     {
       icon: <Wifi className="w-8 h-8" />,
       title: "Wi-Fi",
-      description: "Conexión a internet de alta velocidad en todas las cabañas.",
     },
     {
       icon: <Flame className="w-8 h-8" />,
       title: "Calefacción",
-      description: "Sistema de calefacción para tu comodidad durante todo el año.",
     },
     {
       icon: <Car className="w-8 h-8" />,
-      title: "Estacionamiento",
-      description: "Espacio de estacionamiento privado y seguro para cada cabaña.",
+      title: "Estacionamiento individual",
     },
     {
-      icon: <Trees className="w-8 h-8" />,
-      title: "Entorno Natural",
-      description: "Rodeado de naturaleza, ideal para caminatas y actividades al aire libre.",
+      icon: <Dices className="w-8 h-8" />,
+      title: "Salon de Juegos",
     },
     {
       icon: <Mountain className="w-8 h-8" />,
       title: "Vista a las Sierras",
-      description: "Vistas panorámicas de las hermosas sierras cordobesas desde cada cabaña.",
+    },
+    {
+      icon: <WavesLadder className="w-8 h-8" />,
+      title: "Piletas",
+    },
+    {
+      icon: <Dog className="w-8 h-8" />,
+      title: "Pet Friendly",
+    },
+    {
+      icon: <FerrisWheel className="w-8 h-8" />,
+      title: "Plaza para los niños",
+    },
+    {
+      icon: <Trees className="w-8 h-8" />,
+      title: "10.000 mts de parque completamente cercado",
+    },
+    {
+      icon: <Beef className="w-8 h-8" />,
+      title: "Parrilas individuales",
+    },
+    {
+      icon: <Volleyball className="w-8 h-8" />,
+      title: "Canchas",
+    },
+    {
+      icon: <Armchair className="w-8 h-8" />,
+      title: "Solarium",
+    },
+    {
+      icon: <Martini className="w-8 h-8" />,
+      title: "Bar-proveeduría",
     },
   ]
 

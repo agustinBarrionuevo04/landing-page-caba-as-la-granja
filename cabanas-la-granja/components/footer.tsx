@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-80">© 2024 Cabañas la Granja. Todos los derechos reservados.</p>
+          <p className="text-sm opacity-80">© 2025 Cabañas la Granja. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
