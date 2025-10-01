@@ -143,7 +143,6 @@ Consulta: ${formData.message}`
                     <p className="text-muted-foreground leading-relaxed">
                       Lunes a Domingo: 8:00 - 22:00
                       <br />
-                      Disponibles para emergencias 24/7
                     </p>
                   </div>
                 </div>

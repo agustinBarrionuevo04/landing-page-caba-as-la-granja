@@ -7,27 +7,75 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 export function GallerySection() {
   const images = [
     {
-      src: "/placeholder-wh16b.png",
+      src: "/patio_v1.jpeg",
       alt: "Vista exterior de cabaña",
     },
     {
-      src: "/placeholder-yy121.png",
+      src: "/sala_de_juegos.jpeg",
       alt: "Sala de estar con chimenea",
     },
     {
-      src: "/placeholder-g14bd.png",
+      src: "/cochera+asador.jpeg",
       alt: "Cocina equipada",
     },
     {
-      src: "/placeholder-kpige.png",
+      src: "/interior_v1.jpeg",
       alt: "Dormitorio confortable",
     },
     {
-      src: "/placeholder-bgnav.png",
+      src: "/interior_v2.jpeg",
       alt: "Deck exterior con vista a las sierras",
     },
     {
-      src: "/placeholder-mlumn.png",
+      src: "/patio_v2.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/pileta_v4.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/plaza_v1.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cochera_v1.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/pileta_v6.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cabaña_v6.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cabaña_v5.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cabaña_v7.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cabaña_v8.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/canchas.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/pileta_v7.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/patio_v3.jpeg",
+      alt: "Entorno natural",
+    },
+    {
+      src: "/cabaña_v9.jpeg",
       alt: "Entorno natural",
     },
   ]

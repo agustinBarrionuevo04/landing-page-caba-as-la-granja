@@ -11,7 +11,11 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">CG</span>
+                <img
+                  src="/logo_80x80.png"
+                  alt="Logo Cabañas la Granja"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Cabañas la Granja</h3>
@@ -76,7 +80,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-80">© 2024 Cabañas la Granja. Todos los derechos reservados.</p>
+          <p className="text-sm opacity-80">© 2025 Cabañas la Granja. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
