@@ -131,7 +131,7 @@ export function GallerySection() {
     <section id="galeria" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Galería de imágenes</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Galería</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
             Descubre la belleza de nuestras cabañas y el entorno natural que las rodea.
           </p>
