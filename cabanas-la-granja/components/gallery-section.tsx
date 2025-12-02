@@ -4,90 +4,127 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
+type MediaItem =
+  | {
+      type: "image"
+      src: string
+      alt: string
+    }
+  | {
+      type: "video"
+      src: string
+      alt: string
+      thumbnail: string
+    }
+
 export function GallerySection() {
-  const images = [
+  const mediaItems: MediaItem[] = [
+     {
+      type: "video",
+      src: "https://www.youtube.com/embed/ahLPonA5rww?start=61",
+      thumbnail: "https://img.youtube.com/vi/ahLPonA5rww/hqdefault.jpg",
+      alt: "Recorrido en video por Cabañas la Granja",
+    },
     {
+      type: "image",
       src: "/patio_v1.jpeg",
       alt: "Vista exterior de cabaña",
     },
     {
+      type: "image",
       src: "/sala_de_juegos.jpeg",
       alt: "Sala de estar con chimenea",
     },
     {
+      type: "image",
       src: "/cochera+asador.jpeg",
       alt: "Cocina equipada",
     },
     {
+      type: "image",
       src: "/interior_v1.jpeg",
       alt: "Dormitorio confortable",
     },
     {
+      type: "image",
       src: "/interior_v2.jpeg",
       alt: "Deck exterior con vista a las sierras",
     },
     {
+      type: "image",
       src: "/patio_v2.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/pileta_v4.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/plaza_v1.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cochera_v1.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/pileta_v6.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cabaña_v6.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cabaña_v5.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cabaña_v7.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cabaña_v8.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/canchas.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/pileta_v7.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/patio_v3.jpeg",
       alt: "Entorno natural",
     },
     {
+      type: "image",
       src: "/cabaña_v9.jpeg",
       alt: "Entorno natural",
     },
   ]
 
-  const [currentImage, setCurrentImage] = useState(0)
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0)
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length)
+    setCurrentMediaIndex((prev) => (prev + 1) % mediaItems.length)
   }
 
   const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length)
+    setCurrentMediaIndex((prev) => (prev - 1 + mediaItems.length) % mediaItems.length)
   }
 
   return (
@@ -101,13 +138,25 @@ export function GallerySection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Main Image */}
+          {/* Main Media */}
           <div className="relative mb-8">
-            <img
-              src={images[currentImage].src || "/placeholder.svg"}
-              alt={images[currentImage].alt}
-              className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-lg"
-            />
+            {mediaItems[currentMediaIndex].type === "image" ? (
+              <img
+                src={mediaItems[currentMediaIndex].src || "/placeholder.svg"}
+                alt={mediaItems[currentMediaIndex].alt}
+                className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-lg"
+              />
+            ) : (
+              <div className="w-full h-96 md:h-[500px] rounded-lg shadow-lg overflow-hidden bg-black">
+                <iframe
+                  src={mediaItems[currentMediaIndex].src}
+                  title={mediaItems[currentMediaIndex].alt}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            )}
 
             {/* Navigation Buttons */}
             <Button
@@ -130,17 +179,25 @@ export function GallerySection() {
 
           {/* Thumbnail Navigation */}
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {images.map((image, index) => (
+            {mediaItems.map((item, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentImage(index)}
+                onClick={() => setCurrentMediaIndex(index)}
                 className={`relative overflow-hidden rounded-lg transition-all duration-300 ${
-                  currentImage === index
+                  currentMediaIndex === index
                     ? "ring-2 ring-primary scale-105"
                     : "hover:scale-105 opacity-70 hover:opacity-100"
                 }`}
               >
-                <img src={image.src || "/placeholder.svg"} alt={image.alt} className="w-full h-20 object-cover" />
+                {item.type === "image" ? (
+                  <img src={item.src || "/placeholder.svg"} alt={item.alt} className="w-full h-20 object-cover" />
+                ) : (
+                  <img
+                    src={item.thumbnail}
+                    alt={item.alt}
+                    className="w-full h-20 object-cover"
+                  />
+                )}
               </button>
             ))}
           </div>
