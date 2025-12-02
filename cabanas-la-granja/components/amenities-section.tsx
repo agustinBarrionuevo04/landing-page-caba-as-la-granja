@@ -6,58 +6,72 @@ export function AmenitiesSection() {
     {
       icon: <Utensils className="w-8 h-8" />,
       title: "Cocina Completamente Equipada",
+      description: "",
     },
     {
       icon: <Wifi className="w-8 h-8" />,
       title: "Wi-Fi",
+      description: "",
     },
     {
       icon: <Flame className="w-8 h-8" />,
       title: "Calefacción",
+      description: "",
     },
     {
       icon: <Car className="w-8 h-8" />,
       title: "Estacionamiento individual",
+      description: "",
     },
     {
       icon: <Dices className="w-8 h-8" />,
       title: "Salon de Juegos",
+      description: "",
     },
     {
       icon: <Mountain className="w-8 h-8" />,
       title: "Vista a las Sierras",
+      description: "",
     },
     {
       icon: <WavesLadder className="w-8 h-8" />,
       title: "Piletas",
+      description: "",
     },
     {
       icon: <Dog className="w-8 h-8" />,
       title: "Pet Friendly",
+      description: "",
     },
     {
       icon: <FerrisWheel className="w-8 h-8" />,
       title: "Plaza para los niños",
+      description: "",
     },
     {
       icon: <Trees className="w-8 h-8" />,
       title: "10.000 mts de parque completamente cercado",
+      description: "",
     },
     {
       icon: <Beef className="w-8 h-8" />,
       title: "Parrilas individuales",
+      description: "",
     },
     {
       icon: <Volleyball className="w-8 h-8" />,
       title: "Canchas",
+      description: "",
     },
     {
       icon: <Armchair className="w-8 h-8" />,
       title: "Solarium",
+      description: "",
     },
     {
       icon: <Martini className="w-8 h-8" />,
       title: "Bar-proveeduría",
+      description: "",
     },
   ]
 

@@ -94,7 +94,7 @@ Consulta: ${formData.message}`
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card>
+            {/* <Card>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <MapPin className="w-6 h-6 text-primary mt-1" />
@@ -103,20 +103,22 @@ Consulta: ${formData.message}`
                     <p className="text-muted-foreground leading-relaxed">
                       La Falda, Córdoba, Argentina
                       <br />
-                      En el corazón de las sierras cordobesas
+                      Av. Ferrarini al 1100.
                     </p>
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <Phone className="w-6 h-6 text-primary mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Teléfono</h3>
-                    <p className="text-muted-foreground">+54 9 3548 526883</p>
+                    <h3 className="font-semibold text-lg mb-2">Teléfonos</h3>
+                    <p className="text-muted-foreground">+54 9 3548 526883
+                      <br />
+                      +54 9 3548571607 </p>
                   </div>
                 </div>
               </CardContent>
