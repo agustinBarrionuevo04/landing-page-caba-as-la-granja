@@ -51,6 +51,12 @@ export function Header() {
             Galería
           </button>
           <button
+            onClick={() => scrollToSection("ubicacion")}
+            className="text-foreground hover:text-primary transition-colors"
+          >
+            Ubicación
+          </button>
+          <button
             onClick={() => scrollToSection("contacto")}
             className="text-foreground hover:text-primary transition-colors"
           >

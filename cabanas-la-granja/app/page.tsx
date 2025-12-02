@@ -6,6 +6,7 @@ import { GallerySection } from "@/components/gallery-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
+import { LocationSection } from "@/components/location-section"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutSection />
       <AmenitiesSection />
       <GallerySection />
+      <LocationSection/>
       <ContactSection />
       <Footer />
       <FloatingButtons />

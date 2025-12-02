@@ -23,12 +23,11 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-          Vivi la tranquilidad en 
+          Vivi la tranquilidad en
           <span className="text-secondary block mt-2">Cabañas la Granja</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-pretty max-w-2xl mx-auto leading-relaxed">
-          Ubicadas en el corazón de La Falda, Córdoba, nuestras cabañas son el destino perfecto para 
-          reconectar con la naturaleza
+          Ubicadas en el av.ferrarini al 1100, en La Falda.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
@@ -41,11 +40,14 @@ export function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => document.getElementById("nosotros")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-white text-white hover:bg-white hover:text-foreground text-lg px-8 py-3"
+            onClick={() =>
+              document.getElementById("nosotros")?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="border-white text-foreground bg-white text-lg px-8 py-3"
           >
             Conoce Más
           </Button>
+
         </div>
       </div>
     </section>
